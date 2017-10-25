@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="payment" translate="label" type="text" sortOrder="400" showInDefault="1" showInWebsite="1" showInStore="1">
+            <group id="pagarme_group" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Pagar.me Payment Solutions</label>
+                <comment><![CDATA[Pagar.me Payment Solutions]]></comment>
+                <attribute type="expanded">1</attribute>
+                <fieldset_css>complex</fieldset_css>
+                <frontend_model>Magento\Paypal\Block\Adminhtml\System\Config\Fieldset\Group</frontend_model>
+
+                <include path="MageIT_PagarMe::system/pagarme_getting_started.xml"/>
+                <include path="MageIT_PagarMe::system/pagarme_required_settings.xml"/>
+                <!--<include path="MageIT_PagarMe::system/pagarme_advanced_order_processing.xml"/>-->
+                <!--<include path="MageIT_PagarMe::system/pagarme_advanced_notifications.xml"/>-->
+                <!--<include path="MageIT_PagarMe::system/pagarme_billing_agreements.xml"/>-->
+                <!--<include path="MageIT_PagarMe::system/pagarme_checkout_experience.xml"/>-->
+                <!--<include path="MageIT_PagarMe::system/pagarme_manual_review.xml"/>-->
+                <!--<include path="MageIT_PagarMe::system/pagarme_split_payment.xml"/>-->
+                <!--<include path="MageIT_PagarMe::system/pagarme_cc.xml"/>-->
+                <!--<include path="MageIT_PagarMe::system/pagarme_oneclick.xml"/>-->
+                <!--<include path="MageIT_PagarMe::system/pagarme_hpp.xml"/>-->
+                <!--<include path="MageIT_PagarMe::system/pagarme_sepa.xml"/>-->
+                <!--<include path="MageIT_PagarMe::system/pagarme_pos.xml"/>-->
+                <!--<include path="MageIT_PagarMe::system/pagarme_pay_by_mail.xml"/>-->
+                <!--<include path="MageIT_PagarMe::system/pagarme_boleto.xml"/>-->
+            </group>
+        </section>
+    </system>
+</config>
